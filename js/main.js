@@ -35,4 +35,26 @@ $(function () {
 });
 
 $(window).on("load", function () { });
-$(document).ready(function () { });
+$(document).ready(function () {
+    // Fixed Header
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 40) {
+            $('.top-bar-cont').addClass('head-fix');
+        } else {
+            $('.top-bar-cont').removeClass('head-fix');
+        }
+    });
+
+
+    var i = 0;
+    var txt = document.getElementById("demo").innerHTML;
+    document.getElementById("demo").innerHTML = "";
+    (function typeWriter() {
+
+        if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, 50);
+        }
+    })();
+});

@@ -1,0 +1,33 @@
+.about {
+    position: relative;
+    padding: 133px 0 139px;
+    color: $fff;
+
+    &:after {
+        content: url('../images/pattern.png');
+        position: absolute;
+        top: 25px;
+        right: 70px;
+        z-index: -1;
+    }
+}
+
+.about-head {
+    font-size: 38px;
+    font-family: med;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.263;
+
+    &:after {
+        content: url('../images/border.png');
+    }
+}
+
+.about-text {
+    font-size: 18px;
+    padding-left: 90px;
+    text-align: justify;
+    line-height: 1.889;
+}

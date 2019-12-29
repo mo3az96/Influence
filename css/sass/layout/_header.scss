@@ -1,0 +1,66 @@
+header {
+    position: relative;
+}
+
+.top-bar-cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 14px 0;
+}
+
+.top-bar {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.logo {
+    max-width: 310px;
+}
+
+.mo-menu-btn {
+    font-size: 30px;
+    color: $fff;
+    cursor: pointer;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover {
+        color: $hover;
+    }
+}
+
+.head-fix {
+    position: fixed;
+    background-color: $back;
+    padding: 10px 0;
+    z-index: 9;
+
+    .logo {
+        max-width: 250px;
+    }
+}
+
+.text {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: med;
+    color: $fff;
+}
+
+.arabic-head {
+    font-size: 48px;
+    margin-bottom: 19px;
+}
+
+.english-head {
+    font-size: 28px;
+}
