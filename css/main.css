@@ -1,0 +1,104 @@
+@keyframes vibe {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    -o-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  75% {
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+}
+@keyframes shape {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.fixall {
+  margin: 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  text-decoration: none;
+}
+.fixall:hover {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+.fixall:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: sst;
+  background-color: #161616;
+}
+body::-webkit-scrollbar {
+  background-color: rgba(153, 153, 153, 0.5);
+  width: 7px;
+  height: 0px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #161616;
+  opacity: 0.5;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+body::-webkit-scrollbar-thumb:hover {
+  opacity: 1;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(22, 22, 22, 0.75) rgba(153, 153, 153, 0.5);
+}
+
+.overflow {
+  overflow: hidden !important;
+}
+
+@font-face {
+  font-family: "sst";
+  src: url("../fonts/SST/SST-ARABIC-ROMAN.TTF");
+}
+@font-face {
+  font-family: "light";
+  src: url("../fonts/SST/SST-ARABIC-LIGHT.TTF");
+}
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/SST/SST-ARABIC-BOLD.TTF");
+}
+@font-face {
+  font-family: "med";
+  src: url("../fonts/SST/SST-ARABIC-MEDIUM.TTF");
+}
+
+/*# sourceMappingURL=main.css.map */
