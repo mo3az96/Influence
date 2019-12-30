@@ -21,6 +21,121 @@ $(window).on("load", function () {
             $('.sec-head').addClass('openStyle');
         }, 1700);
     });
+
+
+    //map
+    var adresse = "";
+
+
+    var location = [adresse[0], $("#map-cont").attr("lat"), $("#map-cont").attr("long")];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 8,
+        overviewMapControl: false,
+        styles: [
+            { elementType: 'geometry', stylers: [{ color: '#2b2b2b' }] },
+            { elementType: 'labels.text.stroke', stylers: [{ color: '#2b2b2b' }] },
+            { elementType: 'labels.text.fill', stylers: [{ color: '#666666' }] },
+            {
+                featureType: 'administrative.locality',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#666666' }]
+            },
+            {
+                featureType: 'poi',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#666666' }]
+            },
+            {
+                featureType: 'poi.park',
+                elementType: 'geometry',
+                stylers: [{ color: '#666666' }]
+            },
+            {
+                featureType: 'poi.park',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#666666' }]
+            },
+            {
+                featureType: 'road',
+                elementType: 'geometry',
+                stylers: [{ color: '#666666' }]
+            },
+            {
+                featureType: 'road',
+                elementType: 'geometry.stroke',
+                stylers: [{ color: '#666666' }]
+            },
+            {
+                featureType: 'road',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#666666' }]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'geometry',
+                stylers: [{ color: '#666666' }]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'geometry.stroke',
+                stylers: [{ color: '#666666' }]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#666666' }]
+            },
+            {
+                featureType: 'transit',
+                elementType: 'geometry',
+                stylers: [{ color: '#666666' }]
+            },
+            {
+                featureType: 'transit.station',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#666666' }]
+            },
+            {
+                featureType: 'water',
+                elementType: 'geometry',
+                stylers: [{ color: '#666666' }]
+            },
+            {
+                featureType: 'water',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#666666' }]
+            },
+            {
+                featureType: 'water',
+                elementType: 'labels.text.stroke',
+                stylers: [{ color: '#666666' }]
+            }
+        ],
+        center: new google.maps.LatLng(24.8629889, 46.5980617),
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        zoomControl: false,
+        fullscreenControl: false
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker;
+    marker = new google.maps.Marker({
+        position: new google.maps.LatLng(location[1], location[2]),
+        map: map,
+        icon: "images/pin.png"
+    });
+
+    google.maps.event.addListener(marker, 'click', (function (marker, i) {
+        return function () {
+            infowindow.setContent(location[0]);
+            infowindow.open(map, marker);
+        }
+    })(marker));
+
+
+
 });
 
 $(document).ready(function () {
@@ -46,13 +161,14 @@ $(document).ready(function () {
     });
     $('.mo-navbar li').click(function (e) {
         e.stopPropagation();
-        console.log(456);
-
     });
     if ($(window).width() <= 767) {
         $(".foot-nav-links-header").addClass("mo-accordion");
         $(".foot-links").addClass("mo-panel");
         $(".gallery .item-cont").unwrap();
+
+
+        $(".input-row .input-label").unwrap();
 
         $(".gallery").addClass("swiper-container");
         $(".item-cont").addClass("swiper-slide");
@@ -126,12 +242,12 @@ $(document).ready(function () {
         }
     });
 
-    $('.input-career').focus(function () {
+    $('.input-career, .input-contact').focus(function () {
         // console.log($(this).parent().find(".floating-label"));
         $(this).parent().find(".floating-label").addClass('label-active');
     });
 
-    $(".input-career").focusout(function () {
+    $(".input-career, .input-contact").focusout(function () {
         if ($(this).val() == '') {
             $(this).parent().find(".floating-label").removeClass('label-active');
         };

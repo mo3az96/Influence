@@ -263,6 +263,10 @@
 
     .about-text {
         font-size: 20px;
+
+        @include xs {
+            font-size: 17px;
+        }
     }
 
     &:after {
@@ -307,5 +311,6 @@
 
     @include xs {
         font-size: 22px;
+        //color: #000;
     }
 }

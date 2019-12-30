@@ -1,4 +1,4 @@
-.contact-page-head {
+.career-page-head {
     font-size: 30px;
     font-family: med;
     text-align: center;
@@ -16,10 +16,12 @@
 
     @include xs {
         font-size: 22px;
+        margin-bottom: 30px;
+        margin-top: 50px;
     }
 }
 
-#{$ltr} .contact-page-head {
+#{$ltr} .career-page-head {
 
     @include xs {
         font-size: 18px;

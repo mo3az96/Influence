@@ -78,6 +78,7 @@
         padding: 0 100px;
 
         @include xs {
+            font-size: 17px;
             padding: 0;
             text-align: center;
         }
