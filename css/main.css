@@ -1448,6 +1448,7 @@ html[dir=ltr] .about-inner .about-head {
 @media (max-width: 767px) {
   .service-page-info .txt {
     padding: 0;
+    text-align: center;
   }
 }
 
