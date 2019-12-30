@@ -125,4 +125,25 @@ $(document).ready(function () {
             swiper: galleryThumbs
         }
     });
+
+    $('.input-career').focus(function () {
+        // console.log($(this).parent().find(".floating-label"));
+        $(this).parent().find(".floating-label").addClass('label-active');
+    });
+
+    $(".input-career").focusout(function () {
+        if ($(this).val() == '') {
+            $(this).parent().find(".floating-label").removeClass('label-active');
+        };
+    });
+
+
+    $(".inputfile").change(function () {
+        var file = $('.inputfile')[0].files[0]
+        if (file) {
+            $(".input-file").val(file.name)
+            $(".input-file").parent().find(".floating-label").addClass('label-active');
+        }
+    });
+
 });
