@@ -1509,7 +1509,7 @@ html[dir=ltr] .about-inner .about-head {
 
 @media (max-width: 767px) {
   html[dir=ltr] .contact-page-head {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
