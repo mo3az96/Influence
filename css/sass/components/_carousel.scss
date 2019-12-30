@@ -26,6 +26,10 @@
         }
     }
 
+    .item-cont {
+        width: 100%;
+    }
+
     .gallery-anchor {
         @include xs {
             max-width: 350px;

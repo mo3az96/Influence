@@ -306,6 +306,9 @@ html[dir=ltr] .lang {
 .gallery-slider .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #fff;
 }
+.gallery-slider .item-cont {
+  width: 100%;
+}
 @media (max-width: 767px) {
   .gallery-slider .gallery-anchor {
     max-width: 350px;
