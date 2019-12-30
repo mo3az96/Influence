@@ -794,6 +794,13 @@ html[dir=ltr] .main-head {
   font-family: med;
   color: #fff;
   margin: 36px 0 19px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.service-name:hover {
+  color: #c7c7c7;
 }
 
 .service-info {

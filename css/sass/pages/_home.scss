@@ -48,6 +48,11 @@
     font-family: med;
     color: $fff;
     margin: 36px 0 19px;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover {
+        color: #c7c7c7;
+    }
 }
 
 .service-info {
