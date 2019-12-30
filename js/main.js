@@ -94,14 +94,35 @@ $(document).ready(function () {
             el: '.testmonials-slider .swiper-pagination',
             clickable: true,
         },
-        navigation: {
-            nextEl: '.testmonials-slider .swiper-button-next',
-            prevEl: '.testmonials-slider .swiper-button-prev',
-        },
         breakpoints: {
-            500: {
+            0: {
                 navigation: false,
             },
+            500: {
+                navigation: {
+                    nextEl: '.testmonials-slider .swiper-button-next',
+                    prevEl: '.testmonials-slider .swiper-button-prev',
+                },
+            },
         },
+    });
+
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 9,
+        slidesPerView: 6,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs
+        }
     });
 });
