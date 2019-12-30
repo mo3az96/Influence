@@ -1,3 +1,11 @@
+.foot-nav-links {
+    @include xs {
+        background-color: #292929;
+        padding: 10px 15px;
+
+    }
+}
+
 .mo-accordion {
     cursor: pointer;
     width: 100%;

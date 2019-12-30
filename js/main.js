@@ -16,6 +16,10 @@ $(window).on("load", function () {
                 }
             });
         });
+        $('.arabic-head').addClass('openStyle');
+        setTimeout(() => {
+            $('.english-head').addClass('openStyle');
+        }, 1700);
     });
 });
 
@@ -81,7 +85,10 @@ $(document).ready(function () {
         },
     });
 
-    var txt = document.getElementsByClassName("demo")
+
+
+
+    // var txt = document.getElementsByClassName("demo")
 
 
 

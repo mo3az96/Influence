@@ -409,6 +409,10 @@
     &:hover {
         color: #fff;
     }
+
+    @include xs {
+        font-size: 16px;
+    }
 }
 
 .new {

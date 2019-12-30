@@ -84,15 +84,37 @@ header {
     font-size: 48px;
     margin-bottom: 19px;
 
+    width: 0%;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: all 7s ease;
+
     @include xs {
         font-size: 28px;
+        transition: all 3s ease;
     }
 }
 
 .english-head {
     font-size: 28px;
+    direction: ltr;
+    width: 0%;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: all 7s ease;
 
     @include xs {
         font-size: 18px;
+        transition: all 3s ease;
     }
+}
+
+.openStyle {
+    width: 100%;
 }

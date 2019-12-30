@@ -35,6 +35,11 @@ footer {
     @include sm {
         align-items: center;
     }
+
+    @include xs {
+        align-items: flex-start;
+        padding: 0 15px;
+    }
 }
 
 .foot-nav-li {
