@@ -84,4 +84,24 @@ $(document).ready(function () {
             clickable: true,
         },
     });
+
+
+
+    var testmonialsslider = new Swiper('.testmonials-slider .swiper-container', {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: '.testmonials-slider .swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.testmonials-slider .swiper-button-next',
+            prevEl: '.testmonials-slider .swiper-button-prev',
+        },
+        breakpoints: {
+            500: {
+                navigation: false,
+            },
+        },
+    });
 });

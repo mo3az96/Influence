@@ -1,0 +1,45 @@
+.breadcrumb-sec {
+    position: relative;
+    background-image: url("../../../images/breadcrumb.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 237px;
+}
+
+.page-head {
+    font-size: 36px;
+    color: $fff;
+    font-family: bold;
+    margin-bottom: 9px;
+}
+
+ol.breadcrumb {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+
+    li {
+        font-size: 18px;
+        font-family: light;
+        color: $fff;
+        cursor: default;
+
+        &.active {
+            color: $fff;
+        }
+
+        a {
+            font-size: 18px;
+            font-family: light;
+            color: $fff;
+            @include transition(all 0.3s ease-in-out);
+
+            &:hover {
+                color: #c7c7c7;
+            }
+        }
+    }
+}

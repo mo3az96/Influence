@@ -47,3 +47,80 @@
         }
     }
 }
+
+.testmonial {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.testmonial-txt {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 1.889;
+    margin-bottom: 27px;
+}
+
+.person-name {
+    font-size: 18px;
+    color: rgb(134, 134, 134);
+    font-family: bold;
+}
+
+
+.testmonials-slider {
+    position: relative;
+
+    .swiper-pagination {
+        display: none;
+
+        @include xs {
+            display: block;
+            z-index: 8;
+        }
+    }
+
+    .swiper-pagination-bullets {
+        bottom: -40px;
+        width: 100%;
+
+        .swiper-pagination-bullet {
+            width: 11px;
+            height: 11px;
+            background: rgba($fff, 0.5);
+            margin: 0 5px;
+
+            &.swiper-pagination-bullet-active {
+                background: $fff;
+            }
+        }
+    }
+
+    div[class^=swiper-button-] {
+        top: 50%;
+        background-image: none;
+        transform: translateY(-50%);
+        color: #868686;
+        font-size: 24px;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+
+        @include xs {
+            display: none !important;
+        }
+
+        &.swiper-button-next {
+            right: 0;
+        }
+
+        &.swiper-button-prev {
+            left: 0;
+        }
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
