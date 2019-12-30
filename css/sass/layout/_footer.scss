@@ -58,6 +58,13 @@ footer {
     }
 }
 
+#{$ltr} .foot-link {
+
+    &:hover {
+        transform: translateX(8px);
+    }
+}
+
 .social-cont {
     @include sm {
         margin: 35px 0;
