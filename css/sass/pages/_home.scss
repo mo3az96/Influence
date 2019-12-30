@@ -10,6 +10,7 @@
 
     a {
         width: 100%;
+        overflow: hidden;
 
         img {
             width: 100%;
@@ -31,6 +32,7 @@
 
     a {
         width: 50%;
+        overflow: hidden;
 
         img {
             width: 100%;
@@ -90,6 +92,24 @@
             display: none;
         }
     }
+
+
+}
+
+.item-cont {
+    a {
+        display: flex;
+
+        img {
+            @include transition(all 0.3s ease-in-out);
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
 }
 
 #{$ltr} .item {
@@ -122,7 +142,7 @@
     margin-top: 158px;
 
     @include sm {
-        margin-top: 100px;
+        margin-top: 50px;
     }
 }
 
@@ -218,5 +238,57 @@
 
     @include sm {
         text-align: center;
+    }
+}
+
+
+.seemore-mobile {
+    display: none;
+    width: 50%;
+    position: relative;
+    margin: auto;
+    margin-top: 55px;
+    height: 120px;
+
+    .see-more {
+        color: #161616;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        background-color: $fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        span {
+            font-family: bold;
+            font-size: 28px;
+
+            @include sm {
+                font-size: 21px;
+            }
+
+            &:first-child {
+                font-family: light;
+                font-size: 29px;
+
+                @include sm {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        &:after {
+            margin-top: 17px;
+            content: url('../images/border.png');
+        }
+    }
+
+    @include xs {
+        display: block;
     }
 }
