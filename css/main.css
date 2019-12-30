@@ -1277,6 +1277,12 @@ html[dir=ltr] .about-text {
   max-width: 310px;
   margin-bottom: 40px;
 }
+@media (max-width: 767px) {
+  .about-inner .about-head {
+    max-width: none;
+    text-align: center;
+  }
+}
 .about-inner .about-text {
   font-size: 20px;
 }
@@ -1286,6 +1292,11 @@ html[dir=ltr] .about-text {
 
 html[dir=ltr] .about-inner .about-head {
   max-width: 475px;
+}
+@media (max-width: 767px) {
+  html[dir=ltr] .about-inner .about-head {
+    max-width: none;
+  }
 }
 
 .inner-numbes-cont {
