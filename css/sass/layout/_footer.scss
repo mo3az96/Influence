@@ -96,6 +96,17 @@ footer {
     }
 }
 
+#{$ltr} .social-link {
+    margin-right: 9px;
+    margin-left: 0;
+
+    &:last-of-type {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+
 
 .copytight {
     display: flex;
@@ -125,7 +136,7 @@ footer {
     }
 
     .tasawk {
-        width: 187px;
+        width: 251.14px;
         display: flex;
         align-items: center;
         justify-content: flex-end;

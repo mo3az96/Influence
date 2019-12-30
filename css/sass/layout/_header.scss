@@ -80,9 +80,10 @@ header {
     }
 }
 
-.arabic-head {
+.main-head {
     font-size: 48px;
-    margin-bottom: 19px;
+    padding-bottom: 4px;
+    margin-bottom: 15px;
 
     width: 0%;
     display: block;
@@ -98,7 +99,11 @@ header {
     }
 }
 
-.english-head {
+#{$ltr} .main-head {
+    direction: rtl;
+}
+
+.sec-head {
     font-size: 28px;
     direction: ltr;
     width: 0%;
@@ -108,6 +113,7 @@ header {
     white-space: nowrap;
     pointer-events: none;
     transition: all 7s ease;
+    padding-bottom: 4px;
 
     @include xs {
         font-size: 18px;

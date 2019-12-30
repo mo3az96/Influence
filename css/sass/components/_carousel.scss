@@ -27,17 +27,19 @@
     }
 
     .gallery-anchor {
-        max-width: 350px;
-        min-width: 350px;
-        max-height: 350px;
-        min-height: 350px;
-        overflow: hidden;
-        display: flex;
-        margin: auto;
+        @include xs {
+            max-width: 350px;
+            min-width: 350px;
+            max-height: 350px;
+            min-height: 350px;
+            overflow: hidden;
+            display: flex;
+            margin: auto;
 
-        img {
-            width: 100%;
-            height: auto;
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
     }
 }

@@ -22,6 +22,20 @@
     }
 }
 
+#{$ltr} .about {
+    &:after {
+        left: 70px;
+        right: auto;
+        z-index: -1;
+
+        @include sm {
+            left: auto;
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
+}
+
 .about-head {
     font-size: 38px;
     font-family: med;
@@ -45,6 +59,15 @@
     }
 }
 
+#{$ltr} .about-head {
+    padding-left: 0;
+    padding-right: 35px;
+
+    @include sm {
+        padding: 0;
+    }
+}
+
 .about-text {
     font-size: 18px;
     padding-left: 90px;
@@ -55,6 +78,15 @@
         align-items: center;
         padding: 0;
         text-align: center;
+    }
+}
+
+#{$ltr} .about-text {
+    padding-left: 0;
+    padding-right: 90px;
+
+    @include sm {
+        padding: 0;
     }
 }
 
@@ -366,6 +398,32 @@
 
         @include xs {
             display: none;
+        }
+    }
+}
+
+#{$ltr} .item {
+
+
+    .seemore-cont {
+
+        .see-more {
+            span {
+                font-size: 22px;
+
+                @include sm {
+                    font-size: 18px;
+                }
+
+                &:first-child {
+
+                    font-size: 23px;
+
+                    @include sm {
+                        font-size: 17px;
+                    }
+                }
+            }
         }
     }
 }

@@ -58,6 +58,16 @@
     &:hover {
         color: #a5a4a4;
     }
+
+    @include xs {
+        top: 31px;
+    }
+
+}
+
+#{$ltr} .close-btn {
+    right: 0;
+    left: auto;
 }
 
 .lang {
@@ -75,4 +85,9 @@
     &:hover {
         color: #fff;
     }
+}
+
+#{$ltr} .lang {
+    right: auto;
+    left: 0;
 }
