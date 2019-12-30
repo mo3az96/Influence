@@ -1,5 +1,9 @@
 header {
     position: relative;
+
+    @include xs {
+        padding-top: 92.58px;
+    }
 }
 
 .top-bar-cont {
@@ -8,6 +12,13 @@ header {
     left: 0;
     right: 0;
     padding: 14px 0;
+    z-index: 99;
+
+    @include xs {
+        position: fixed;
+        background-color: $back;
+        padding: 10px 0;
+    }
 }
 
 .top-bar {
@@ -18,17 +29,26 @@ header {
 
 .logo {
     max-width: 310px;
+
+    @include xs {
+        max-width: 250px;
+    }
 }
 
 .mo-menu-btn {
     font-size: 30px;
     color: $fff;
     cursor: pointer;
+    display: flex;
     @include transition(all 0.3s ease-in-out);
 
     &:hover {
         color: $hover;
     }
+}
+
+.header-bg {
+    width: 100%;
 }
 
 .head-fix {
@@ -54,13 +74,25 @@ header {
     flex-direction: column;
     font-family: med;
     color: $fff;
+
+    @include xs {
+        padding-top: 92.58px;
+    }
 }
 
 .arabic-head {
     font-size: 48px;
     margin-bottom: 19px;
+
+    @include xs {
+        font-size: 28px;
+    }
 }
 
 .english-head {
     font-size: 28px;
+
+    @include xs {
+        font-size: 18px;
+    }
 }

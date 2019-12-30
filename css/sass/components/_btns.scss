@@ -41,4 +41,16 @@
             transform: scalex(1);
         }
     }
+
+    @include sm {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.new {
+    .readmore {
+        order: 4;
+        margin-top: 31px;
+    }
 }

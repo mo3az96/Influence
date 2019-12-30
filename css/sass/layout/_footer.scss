@@ -1,0 +1,138 @@
+footer {
+    background-color: $black;
+    margin-top: 140px;
+    padding: 75px 0 58px;
+
+    @include sm {
+        margin-top: 70px;
+        padding: 50px 0 33px;
+    }
+}
+
+.linksheading {
+    font-family: bold;
+    font-size: 18px;
+    color: $fff;
+    margin-bottom: 35px;
+
+    @include sm {
+        text-align: center;
+    }
+}
+
+.foot-links {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 140px;
+
+    @media (max-width:767px) {
+        flex-wrap: nowrap;
+        max-height: 0;
+    }
+
+    @include sm {
+        align-items: center;
+    }
+}
+
+.foot-nav-li {
+    margin-bottom: 10px;
+}
+
+.foot-link {
+    font-size: 16px;
+    color: #c7c7c7;
+    @include transition(all 0.3s ease-in-out);
+    display: inline-flex;
+
+    &:hover {
+        color: #fff;
+        transform: translateX(-8px);
+    }
+}
+
+.social-cont {
+    @include sm {
+        margin: 35px 0;
+    }
+}
+
+.social {
+    display: flex;
+    align-items: center;
+
+    @include sm {
+        justify-content: center;
+    }
+}
+
+.social-link {
+    width: 39px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #292929;
+    color: #fff;
+    border-radius: 50%;
+    margin-left: 9px;
+    font-size: 18px;
+    @include transition(all 0.3s ease-in-out);
+
+    &:last-of-type {
+        margin-left: 0;
+    }
+
+    &:hover {
+        color: $black;
+        background: #fff;
+    }
+}
+
+
+.copytight {
+    display: flex;
+    color: #949494;
+    align-items: center;
+    font-size: 13px;
+    justify-content: space-between;
+    min-height: 100px;
+
+    @include xs {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    .footlogo {
+        @include xs {
+            order: 1;
+            margin-bottom: 15px;
+        }
+    }
+
+    .nofoz {
+        @include xs {
+            order: 2;
+            margin-bottom: 15px;
+        }
+    }
+
+    .tasawk {
+        width: 187px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @include xs {
+            width: auto;
+            order: 3;
+        }
+
+        img {
+            margin: 0 5px;
+        }
+
+    }
+}

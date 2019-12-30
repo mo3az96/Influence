@@ -4,17 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
-  <title></title>
+  <title>نفوذ النجاح</title>
   <link rel='shortcut icon' type='img/png' href='images/footlogo.png' />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/bootstrap-rtl.min.css" />
   <link rel="stylesheet" href="css/swiper.min.css" />
   <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css" />
   <link rel="stylesheet" href="css/Linearicons.css" />
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
+  <!-- Start Loader -->
+  <div class="loader">
+    <img src="images/load.png" alt="logo" class="img-responsive pulse">
+  </div>
+  <!-- End Loader -->
   <!-- Start Header -->
   <header>
     <img src="images/header.jpg" alt="header" class="header-bg img-responsive">
@@ -27,11 +33,45 @@
       </div>
     </div>
     <div class="text">
-      <h1 class="arabic-head fixall">شركة نفوذ النجاح المحدودة</h1>
-      <h2 class="english-head fixall">.Influence of Success company Ltd </h2>
+      <h1 id="arabic-head" class="arabic-head fixall demo">شركة نفوذ النجاح المحدودة</h1>
+      <h2 id="english-head" class="english-head fixall demo">.Influence of Success company Ltd </h2>
     </div>
   </header>
   <!-- End Header -->
+
+  <!-- Start Navbar -->
+  <div class="navbar-cont">
+    <div class="container">
+      <ul class="mo-navbar fixall list-unstyled">
+        <li><span class="lnr lnr-cross close-btn"></span></li>
+        <li><a href="index-en.html" class="lang fixall">English</a></li>
+        <li class="nav-li fixall">
+          <a href="#!" class="nav-anchor fixall">الرئيسية</a></li>
+        <li class="nav-li fixall">
+          <a href="#!" class="nav-anchor fixall">من نحن</a></li>
+        <li class="nav-li fixall">
+          <a href="#!" class="nav-anchor fixall">خدماتنا</a></li>
+        <li class="nav-li fixall">
+          <a href="#!" class="nav-anchor fixall">شركاتنا</a></li>
+        <li class="nav-li fixall">
+          <a href="#!" class="nav-anchor fixall">معرض الصور</a></li>
+        <li class="nav-li fixall">
+          <a href="#!" class="nav-anchor fixall">الأخبار</a></li>
+        <li class="nav-li fixall">
+          <a href="#!" class="nav-anchor fixall">التوظيف</a></li>
+        <li class="nav-li fixall">
+          <a href="#!" class="nav-anchor fixall">اتصل بنا</a></li>
+        <li class="social">
+          <a href="#!" class="social-link fixall"><i class="fab fa-whatsapp"></i></a>
+          <a href="#!" class="social-link fixall"><i class="fab fa-youtube"></i></a>
+          <a href="#!" class="social-link fixall"><i class="fab fa-instagram"></i></a>
+          <a href="#!" class="social-link fixall"><i class="fab fa-twitter"></i></a>
+          <a href="#!" class="social-link fixall"><i class="fab fa-facebook-f"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- End Navbar -->
 
   <!-- Start About -->
   <div class="about">
@@ -52,9 +92,266 @@
     </div>
   </div>
   <!-- End About -->
+
+  <!-- Start Video -->
+  <div class="video">
+    <a data-fancybox="gallery" href="https://vimeo.com/212800498" class="video-anchor fixall">
+      <img src="images/video.jpg" alt="video" class="img-responsive">
+      <div class="play">شاهد الفيديو التعريفي</div>
+    </a>
+  </div>
+  <!-- End Video -->
+
+  <!-- Start Numbers -->
+  <div class="numbers-cont">
+    <div class="container">
+      <div class="numbers">
+        <div class="number">
+          <span class="count">18</span>
+          علامة تجارية
+        </div>
+        <div class="number">
+          <span class="count">26</span>
+          مدينة
+        </div>
+        <div class="number">
+          <span class="count">43</span>
+          مراكز الخدمة
+        </div>
+        <div class="number">
+          <span class="count">892</span>
+          عملاء سعداء
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Numbers -->
+
+  <!-- Start Features -->
+  <div class="features">
+    <div class="feature">
+      <img src="images/feat1back.jpg" alt="feature" class="img-responsive bg">
+      <div class="info">
+        <img src="images/feat1.png" alt="feat" class="img-responsive">
+        <h4 class="fixall feat-name">رؤيتنــــا</h4>
+        <p class="fixall feat-info">خلافاَ للإعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب
+          اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد، مما يجعله أكثر من 2000 عام في القدم</p>
+      </div>
+    </div>
+    <div class="feature">
+      <img src="images/feat2back.jpg" alt="feature" class="img-responsive bg">
+      <div class="info">
+        <img src="images/feat2.png" alt="feat" class="img-responsive">
+        <h4 class="fixall feat-name">أهدافنــــا</h4>
+        <p class="fixall feat-info">خلافاَ للإعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب
+          اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد، مما يجعله أكثر من 2000 عام في القدم</p>
+      </div>
+    </div>
+  </div>
+  <!-- End Features -->
+
+  <!-- Start Services -->
+  <div class="services">
+    <div class="container">
+      <h2 class="services-head fixall">خدمات نقدمها بإحترافية</h2>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="service">
+            <div class="serv-img"> <img src="images/serv1.png" alt="serv" class="img-responsive "></div>
+            <h4 class="service-name fixall">الأندية الصحية</h4>
+            <p class="service-info fixall">هنالك العديد من الأنواع المتوفرة لنصوص لوريم
+              إيبسوم، ولكن الغالبية تم تعديلها بشكل ما</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="service">
+            <div class="serv-img"> <img src="images/serv2.png" alt="serv" class="img-responsive "></div>
+            <h4 class="service-name fixall">مراكز اللياقة</h4>
+            <p class="service-info fixall">هنالك العديد من الأنواع المتوفرة لنصوص لوريم
+              إيبسوم، ولكن الغالبية تم تعديلها بشكل ما</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="service">
+            <div class="serv-img"> <img src="images/serv3.png" alt="serv" class="img-responsive "></div>
+            <h4 class="service-name fixall">الأكاديميات الرياضية</h4>
+            <p class="service-info fixall">هنالك العديد من الأنواع المتوفرة لنصوص لوريم
+              إيبسوم، ولكن الغالبية تم تعديلها بشكل ما</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="service">
+            <div class="serv-img"> <img src="images/serv4.png" alt="serv" class="img-responsive "></div>
+            <h4 class="service-name fixall">صالات البولينج</h4>
+            <p class="service-info fixall">هنالك العديد من الأنواع المتوفرة لنصوص لوريم
+              إيبسوم، ولكن الغالبية تم تعديلها بشكل ما</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="service">
+            <div class="serv-img"> <img src="images/serv5.png" alt="serv" class="img-responsive "></div>
+            <h4 class="service-name fixall">الرماية</h4>
+            <p class="service-info fixall">هنالك العديد من الأنواع المتوفرة لنصوص لوريم
+              إيبسوم، ولكن الغالبية تم تعديلها بشكل ما</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="service">
+            <div class="serv-img"> <img src="images/serv6.png" alt="serv" class="img-responsive "></div>
+            <h4 class="service-name fixall">الفعاليات الرياضية</h4>
+            <p class="service-info fixall">هنالك العديد من الأنواع المتوفرة لنصوص لوريم
+              إيبسوم، ولكن الغالبية تم تعديلها بشكل ما</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Services -->
+
+
+  <!-- Start Gallery -->
+  <div class="gallery-slider">
+    <div class="gallery">
+      <div class="swiper-wrapper">
+        <div class="items">
+          <div class="item-cont">
+            <a data-fancybox="gallery" href="images/gallery1.jpg" class="gallery-anchor fixall">
+              <img src="images/gallery1.jpg" alt="video" class="img-responsive">
+            </a>
+          </div>
+          <div class="item item-cont">
+            <a data-fancybox="gallery" href="images/gallery2.jpg" class="gallery-anchor fixall">
+              <img src="images/gallery2.jpg" alt="video" class="img-responsive">
+            </a>
+            <div class="seemore-cont">
+              <a href="#!" class="see-more fixall">
+                <span>استعرض المـــزيد</span>
+                <span>من صور مراكزنا</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="items items-2">
+          <div class="item-cont">
+            <a data-fancybox="gallery" href="images/gallery3.jpg" class="gallery-anchor fixall">
+              <img src="images/gallery3.jpg" alt="video" class="img-responsive">
+            </a>
+          </div>
+        </div>
+        <div class="items">
+          <div class="item-cont">
+            <a data-fancybox="gallery" href="images/gallery4.jpg" class="gallery-anchor fixall">
+              <img src="images/gallery4.jpg" alt="video" class="img-responsive">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- End Gallery -->
+
+  <!-- Start News -->
+  <div class="news">
+    <div class="container">
+      <div class="news-head">
+        <h2 class="news-header fixall">آخر أخبارنا</h2>
+        <a href="#!" class="morenews fixall">المزيد من الأخبار</a>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <div class="new">
+            <a href="#!" class="fixall new-head">خلافاَ للإعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً</a>
+            <div class="new-img"><img src="images/news1.jpg" alt="news" class="img-responsive"></div>
+            <p class="fixall new-body">خلافاَ للإعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب
+              اللاتيني منذ العام 45 قبل الميلاد، مما يجعله أكثر من 2000 عام في القدم</p>
+            <a href="#!" class="fixall readmore">قراءة المزيد</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="new">
+            <a href="#!" class="fixall new-head">خلافاَ للإعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً</a>
+            <div class="new-img"><img src="images/news2.jpg" alt="news" class="img-responsive"></div>
+            <p class="fixall new-body">خلافاَ للإعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب
+              اللاتيني منذ العام 45 قبل الميلاد، مما يجعله أكثر من 2000 عام في القدم</p>
+            <a href="#!" class="fixall readmore">قراءة المزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End News -->
+
+  <!-- Start Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-xs-12">
+          <div class="foot-nav-links">
+            <h3 class="fixall foot-nav-links-header linksheading">روابط سريعة</h3>
+            <ul class="fixall list-unstyled foot-links">
+              <li class="fixall foot-nav-li"><a href="#" class="fixall foot-link hvr-backward">من نحن</a>
+              </li>
+              <li class="fixall foot-nav-li"><a href="#" class="fixall foot-link hvr-backward">خدماتنا</a>
+              </li>
+              <li class="fixall foot-nav-li"><a href="#" class="fixall foot-link hvr-backward">شركاتنا</a>
+              </li>
+              <li class="fixall foot-nav-li"><a href="#" class="fixall foot-link hvr-backward">معرض الصور</a>
+              </li>
+              <li class="fixall foot-nav-li"><a href="#" class="fixall foot-link hvr-backward">سياسات الشركة</a></li>
+              <li class="fixall foot-nav-li"><a href="#" class="fixall foot-link hvr-backward">الإقتراحات والشكاوى</a>
+              </li>
+              <li class="fixall foot-nav-li"><a href="#" class="fixall foot-link hvr-backward">التوظيف</a></li>
+              <li class="fixall foot-nav-li"><a href="#" class="fixall foot-link hvr-backward">اتصل بنا</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <div class="social-cont">
+            <h3 class="fixall social-header linksheading">تابعنا على مواقع التواصل</h3>
+            <div class="social">
+              <a href="#!" class="social-link fixall"><i class="fab fa-whatsapp"></i></a>
+              <a href="#!" class="social-link fixall"><i class="fab fa-youtube"></i></a>
+              <a href="#!" class="social-link fixall"><i class="fab fa-instagram"></i></a>
+              <a href="#!" class="social-link fixall"><i class="fab fa-twitter"></i></a>
+              <a href="#!" class="social-link fixall"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <div class="newsletter-container">
+            <h3 class="fixall newsletter-header linksheading">النشرة البريدية</h3>
+            <p class="newsletter-info fixall">اشترك في القائمة البريدية ليصلك جديد اخبارنا</p>
+            <div class="newsletter-cont">
+              <input type="email" class="fixall newsletter-input" placeholder="ادخل بريدك الإلكتروني">
+              <button class="fixall newsletter-btn"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+  <div class="copytight-cont">
+    <div class="container">
+      <div class="copytight">
+        <div class="nofoz">شركة نفوذ النجاح المحدودة 2020 ©</div>
+        <img src="images/footlogo.png" alt="logo" class="img-responsive footlogo">
+        <div class="tasawk">تصميم وتطوير<a href="https://tasawk.com.sa/" class="fixall"><img
+              src="images/tasawk.png"></a>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/jquery-2.2.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

@@ -1,0 +1,42 @@
+.gallery-slider {
+    position: relative;
+
+    .swiper-pagination {
+        display: none;
+
+        @include xs {
+            display: block;
+        }
+    }
+
+    .swiper-pagination-bullets {
+        bottom: -40px;
+        width: 100%;
+
+        .swiper-pagination-bullet {
+            width: 11px;
+            height: 11px;
+            background: rgba($fff, 0.5);
+            margin: 0 5px;
+
+            &.swiper-pagination-bullet-active {
+                background: $fff;
+            }
+        }
+    }
+
+    .gallery-anchor {
+        max-width: 350px;
+        min-width: 350px;
+        max-height: 350px;
+        min-height: 350px;
+        overflow: hidden;
+        display: flex;
+        margin: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
