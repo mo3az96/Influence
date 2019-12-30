@@ -1399,6 +1399,11 @@ html[dir=ltr] .about-inner .about-head {
   text-align: justify;
   padding: 0 100px;
 }
+@media (max-width: 767px) {
+  .service-page-info .txt {
+    padding: 0;
+  }
+}
 
 .services-feat {
   padding: 113px 0 0;
