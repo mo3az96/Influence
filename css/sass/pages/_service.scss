@@ -82,6 +82,10 @@
             text-align: center;
         }
     }
+
+    @include xs {
+        margin: 50px 0 0;
+    }
 }
 
 .services-feat {

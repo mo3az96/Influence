@@ -1451,6 +1451,11 @@ html[dir=ltr] .about-inner .about-head {
     text-align: center;
   }
 }
+@media (max-width: 767px) {
+  .service-page-info {
+    margin: 50px 0 0;
+  }
+}
 
 .services-feat {
   padding: 113px 0 0;
