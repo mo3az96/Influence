@@ -611,7 +611,7 @@ html[dir=ltr] .lang {
 
 .breadcrumb-sec {
   position: relative;
-  background-image: url("../../../images/breadcrumb.jpg");
+  background-image: url("../images/breadcrumb.jpg");
   background-size: cover;
   display: flex;
   align-items: center;
