@@ -24,12 +24,6 @@
 
 .nav-li {
     margin-bottom: 13px;
-    transform: scale(0);
-    @include transition(all 0.3s ease-in-out);
-
-    &.li-active {
-        transform: scale(1);
-    }
 }
 
 .nav-anchor {

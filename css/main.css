@@ -212,14 +212,6 @@ html[dir=ltr] .newsletter-btn:after {
 
 .nav-li {
   margin-bottom: 13px;
-  transform: scale(0);
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.nav-li.li-active {
-  transform: scale(1);
 }
 
 .nav-anchor {
