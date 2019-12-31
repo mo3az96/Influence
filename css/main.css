@@ -1397,6 +1397,7 @@ html[dir=ltr] .about:after {
 @media (max-width: 767px) {
   .about-head {
     font-size: 26px;
+    text-align: center;
   }
 
   .about-head:after {
