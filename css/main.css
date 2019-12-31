@@ -222,28 +222,46 @@ html[dir=ltr] .newsletter-btn:after {
   right: 0;
   z-index: -1;
   display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  content: "";
-  width: 100vw;
+  max-width: 1170px;
+  margin: auto;
   height: 100vh;
   transition: all 500ms ease-in-out;
-  clip-path: circle(30px at 127px 55px);
-  -webkit-clip-path: circle(30px at 127px 55px);
-  -moz-clip-path: circle(30px at 127px 55px);
-  -o-clip-path: circle(30px at 127px 55px);
-  /* z-index: 999; */
+  clip-path: circle(30px at 31px 55px);
+  -webkit-clip-path: circle(30px at 31px 55px);
+  -moz-clip-path: circle(30px at 31px 55px);
+  -o-clip-path: circle(30px at 31px 55px);
   visibility: hidden;
+  overflow: hidden;
+}
+
+html[dir=ltr] .navbar-cont {
+  clip-path: circle(30px at 1139px 55px);
+  -webkit-clip-path: circle(30px at 1139px 55px);
+  -moz-clip-path: circle(30px at 1139px 55px);
+  -o-clip-path: circle(30px at 1139px 55px);
+}
+
+html[dir=ltr] .navbar-cont.active {
+  visibility: visible;
+  clip-path: circle(100%);
+  -webkit-clip-path: circle(100%);
+  -moz-clip-path: circle(100%);
+  -o-clip-path: circle(100%);
+  z-index: 99999;
+  width: 100vw;
+  max-width: 100vw;
 }
 
 @media (max-width: 767px) {
   .navbar-cont {
-    clip-path: circle(30px at 40px 50px);
-    -webkit-clip-path: circle(30px at 40px 50px);
-    -moz-clip-path: circle(30px at 40px 50px);
-    -o-clip-path: circle(30px at 40px 50px);
+    max-width: none;
+    width: 100vw;
+    clip-path: circle(30px at 31px 55px);
+    -webkit-clip-path: circle(30px at 31px 55px);
+    -moz-clip-path: circle(30px at 31px 55px);
+    -o-clip-path: circle(30px at 31px 55px);
   }
+
 }
 
 
@@ -258,6 +276,18 @@ html[dir=ltr] .newsletter-btn:after {
   -moz-clip-path: circle(100%);
   -o-clip-path: circle(100%);
   z-index: 99999;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+@media (max-width: 767px) {
+  .navbar-cont.active {
+    max-width: 100vw;
+    clip-path: circle(100%);
+    -webkit-clip-path: circle(100%);
+    -moz-clip-path: circle(100%);
+    -o-clip-path: circle(100%);
+  }
 }
 
 .navbar-cont.active .close-btn {
