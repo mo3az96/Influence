@@ -20,6 +20,7 @@ $(window).on("load", function () {
         setTimeout(() => {
             $('.sec-head').addClass('openStyle');
         }, 1700);
+        new WOW().init();
     });
 
 
@@ -135,12 +136,13 @@ $(window).on("load", function () {
     })(marker));
 
 
-
 });
 
 $(document).ready(function () {
     // Fixed Header
     $(window).scroll(function () {
+        $(this).scrollTop() >= 500 ? $(".arro_top").fadeIn(500) : $(".arro_top").fadeOut(500);
+
         if ($(this).scrollTop() > 40) {
             $('.top-bar-cont').addClass('head-fix');
             $('.close-btn').addClass('close-fixed');
@@ -150,6 +152,11 @@ $(document).ready(function () {
             $('.close-btn').removeClass('close-fixed');
             $('.lang').removeClass('lang-fixed');
         }
+    });
+    $(".arro_top").click(function () {
+        $("html,body").animate({
+            scrollTop: 0
+        }, 1000);
     });
     $('.mo-menu-btn').click(function () {
         $('body').addClass('overflow');
@@ -163,8 +170,6 @@ $(document).ready(function () {
         e.stopPropagation();
     });
     if ($(window).width() <= 767) {
-        $(".foot-nav-links-header").addClass("mo-accordion");
-        $(".foot-links").addClass("mo-panel");
         $(".gallery .item-cont").unwrap();
 
 
@@ -174,22 +179,7 @@ $(document).ready(function () {
         $(".item-cont").addClass("swiper-slide");
     }
 
-    $('.mo-accordion').click(function () {
-        var x = $(this).siblings().prop('scrollHeight') + 12 + "px";
-        $(".mo-accordion").not(this).removeClass("active");
-        $(this).toggleClass("active");
-        if ($(this).siblings().css('max-height') == '0px') {
-            $(this).siblings().css('max-height', x);
-            $(this).siblings().css('padding-top', "15px");
-        } else {
-            $(this).siblings().css('max-height', '0');
-            $(this).siblings().css('padding-top', "0");
-        }
 
-        $(".mo-accordion").not(this).siblings().css('max-height', '0');
-        $(".mo-accordion").not(this).siblings().css('padding-top', "0");
-        console.log()
-    })
     var galleryswiper = new Swiper('.gallery-slider .swiper-container', {
         slidesPerView: 1,
         spaceBetween: 10,
