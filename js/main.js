@@ -1,6 +1,6 @@
 
 $(window).on("load", function () {
-    $(".loader").fadeOut(500, function () {
+    $(".loader").fadeOut(1000, function () {
         $('body').css("overflow", "visible");
         $('body').animate({
             scrollTop: 0
@@ -9,7 +9,7 @@ $(window).on("load", function () {
             $(this).prop('Counter', 0).animate({
                 Counter: $(this).text()
             }, {
-                duration: 4000,
+                duration: 1500,
                 easing: 'swing',
                 step: function (now) {
                     $(this).text(Math.ceil(now));
@@ -152,12 +152,12 @@ $(document).ready(function () {
         }
     });
     $('.mo-menu-btn').click(function () {
-        $(".navbar-cont").fadeIn(500);
         $('body').addClass('overflow');
+        $('.navbar-cont').addClass('active');
     });
     $('.close-btn, .navbar-cont').click(function () {
-        $(".navbar-cont").fadeOut(500);
         $('body').removeClass('overflow');
+        $('.navbar-cont').removeClass('active');
     });
     $('.mo-navbar li').click(function (e) {
         e.stopPropagation();
