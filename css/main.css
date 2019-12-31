@@ -2329,4 +2329,5 @@ html[dir=ltr] .social-link:last-of-type {
 
 .copytight .tasawk img {
   margin: 0 5px;
+  display: none;
 }
