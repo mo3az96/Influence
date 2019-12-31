@@ -262,6 +262,12 @@ html[dir=ltr] .navbar-cont.active {
     -o-clip-path: circle(30px at 31px 55px);
   }
 
+  html[dir=ltr] .navbar-cont {
+    clip-path: circle(30px at 90% 55px);
+    -webkit-clip-path: circle(30px at 90% 55px);
+    -moz-clip-path: circle(30px at 90% 55px);
+    -o-clip-path: circle(30px at 90% 55px);
+  }
 }
 
 
