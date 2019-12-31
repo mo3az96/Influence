@@ -1,6 +1,7 @@
 body {
     font-family: sst;
     background-color: $back;
+    overflow: hidden;
 
     &::-webkit-scrollbar {
         background-color: rgba($back, 0.5);

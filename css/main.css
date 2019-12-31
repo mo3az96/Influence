@@ -58,6 +58,7 @@
 body {
   font-family: sst;
   background-color: #161616;
+  overflow: hidden;
 }
 body::-webkit-scrollbar {
   background-color: rgba(22, 22, 22, 0.5);
@@ -211,6 +212,14 @@ html[dir=ltr] .newsletter-btn:after {
 
 .nav-li {
   margin-bottom: 13px;
+  transform: scale(0);
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.nav-li.li-active {
+  transform: scale(1);
 }
 
 .nav-anchor {
@@ -322,6 +331,7 @@ html[dir=ltr] .lang {
   .gallery-slider .gallery-anchor img {
     width: 100%;
     height: auto;
+    object-fit: cover;
   }
 }
 
